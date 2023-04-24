@@ -222,9 +222,9 @@ if __name__ == '__main__':
     # 設定掃描時間區間與現在時間
     now = utils.datetime_utc_now()
     m_earlier = utils.any_isoformat_2_utc_datetime(
-        "2023-04-12 00:00:00Z")  # Z is UTC
+        "2023-04-18 00:00:00Z")  # Z is UTC
     m_later = utils.any_isoformat_2_utc_datetime(
-        "2023-04-17 23:59:59Z")  # Z is UTC
+        "2023-04-23 23:59:59Z")  # Z is UTC
     # 產生校正計算點時間清單 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.date_range.html
     regression_date_list = pd.date_range(
         m_earlier+relativedelta(hours=3), m_later, freq='1H').to_pydatetime()
